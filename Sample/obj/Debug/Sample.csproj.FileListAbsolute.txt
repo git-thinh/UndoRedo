@@ -1,0 +1,11 @@
+C:\_CS\UndoRedo\Sample\bin\Debug\Sample.exe
+C:\_CS\UndoRedo\Sample\bin\Debug\Sample.pdb
+C:\_CS\UndoRedo\Sample\bin\Debug\UndoRedo.dll
+C:\_CS\UndoRedo\Sample\bin\Debug\UndoRedo.pdb
+C:\_CS\UndoRedo\Sample\obj\Debug\Sample.csprojResolveAssemblyReference.cache
+C:\_CS\UndoRedo\Sample\obj\Debug\Sample.Properties.Resources.resources
+C:\_CS\UndoRedo\Sample\obj\Debug\Sample.SampleForm.resources
+C:\_CS\UndoRedo\Sample\obj\Debug\Sample.csproj.GenerateResource.Cache
+C:\_CS\UndoRedo\Sample\obj\Debug\Sample.csproj.CoreCompileInputs.cache
+C:\_CS\UndoRedo\Sample\obj\Debug\Sample.exe
+C:\_CS\UndoRedo\Sample\obj\Debug\Sample.pdb

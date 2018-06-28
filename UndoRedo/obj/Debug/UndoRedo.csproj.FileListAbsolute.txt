@@ -1,0 +1,8 @@
+C:\_CS\UndoRedo\UndoRedo\bin\Debug\UndoRedo.dll
+C:\_CS\UndoRedo\UndoRedo\bin\Debug\UndoRedo.pdb
+C:\_CS\UndoRedo\UndoRedo\obj\Debug\UndoRedo.csprojResolveAssemblyReference.cache
+C:\_CS\UndoRedo\UndoRedo\obj\Debug\NesterovskyBros.Actions.Properties.Resources.resources
+C:\_CS\UndoRedo\UndoRedo\obj\Debug\UndoRedo.csproj.GenerateResource.Cache
+C:\_CS\UndoRedo\UndoRedo\obj\Debug\UndoRedo.csproj.CoreCompileInputs.cache
+C:\_CS\UndoRedo\UndoRedo\obj\Debug\UndoRedo.dll
+C:\_CS\UndoRedo\UndoRedo\obj\Debug\UndoRedo.pdb

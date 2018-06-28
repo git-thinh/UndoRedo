@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Undo and redo? - Easy!</title>
+  <style>
+      *.title
+      {
+        font-size: larger;
+        font-weight: bolder;
+        color: red;
+      }
+      
+      *.code-block
+      {
+        display: block;
+        font-family: monospace;
+        font-size: smaller;
+        white-space: pre;
+      }
+    </style>
+</head>
+<body>
+  <p class="title">
+    Undo and redo? - Easy!</p>
+  <p><a href="#">Download sample code.</a></p>
+  <p>
+    In our recent .NET 2.0 GUI project our client ingenuously asked us to implement
+    undo and redo facility. Nothing unusual in nowadays, however it's still not the
+    easiest thing in the world to implement.</p>
+  <p>
+    Naturally you want to have this feature for a free. You do not want to invest too
+    much time to support it. We had no much time to implement this "sugar" also. I know,
+    I know, this is important for a user, however when you're facing a big project with
+    a lot of logic to be implemented in short time you're starting to think it would
+    be nice to have undo and redo logic that works independently (at least almost
+    independently) on business logic.</p>
+  <p>
+    Thus, what's that place where we could plug this service? - Exactly! - It's data
+    binding layer.</p>
+  <p>
+    When you're binding your data to controls the "Type Descriptor Architecture" is
+    used to retrieve and update the data. Fortunately this architecture is allowing
+    us to create a data wrapper (ICustomTypeDescriptor). Such wrapper should track
+    property modifications of the data object thus providing undo and redo service. 
+    In short that's all, other are technical details.</p>
+  <p>
+    Let's look at how undo and redo service goes into the action. Instead of:</p>
+  <div class="code-block">  bindingSource.DataSource = data;</div>
+  <p>you have to write:</p>
+  <div class="code-block">  bindingSource.DataSource = Create-UndoRedo-Wrapper(data);</div>
+  <p>
+    There should also be a class to collect and track actions. User should create an 
+    instance of this class to implement the simplest form of code with undo and redo
+    support:</p>
+  <div class="code-block">  // Create UndoRedoManager.
+  undoRedoManager = new UndoRedoManager();
+
+  // Create undo and redo wrapper around the data object.
+  // Bind controls.
+  dataBindingSource.DataSource =
+    new UndoRedoTypeDescriptor(data, undoRedoManager);</div>
+  <p>
+    Now turn our attention to the implementation of the undo and redo mechanism. There
+    are two types in the core: UndoRedoManager and IAction. The first
+    one is to track actions, the later one is to define undo and redo action.
+    UndoRedoManager performs either "Do/Redo", or "Undo" operations over IAction 
+    instances. We have provided
+    two useful implementations of the IAction interface:
+    UndoRedoTypeDescriptor - wrapper around an object that tracks property changes, 
+    and UndoRedoList&lt;T&gt; - wrapper around the IList&lt;T&gt; that tracks collection
+    modifications. Users may create their implementations of the IAction to handle 
+    other undo and redo activities.</p>
+  <p>
+    We have created a sample application to show undo and redo in action. You can download
+    it from <a href="#">here</a>.</p>
+</body>
+</html>

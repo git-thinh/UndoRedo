@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5B843DD1-7453-468F-998F-E685AC21582C}"
+	ProjectSection(SolutionItems) = preProject
+		Description.html = Description.html
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample", "Sample\Sample.csproj", "{577FDE47-F7CD-4C99-AFBF-9B0E43B3CE4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UndoRedo", "UndoRedo\UndoRedo.csproj", "{4A174712-5A13-420A-98F6-1179CADECF8F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{577FDE47-F7CD-4C99-AFBF-9B0E43B3CE4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{577FDE47-F7CD-4C99-AFBF-9B0E43B3CE4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{577FDE47-F7CD-4C99-AFBF-9B0E43B3CE4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{577FDE47-F7CD-4C99-AFBF-9B0E43B3CE4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A174712-5A13-420A-98F6-1179CADECF8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A174712-5A13-420A-98F6-1179CADECF8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A174712-5A13-420A-98F6-1179CADECF8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A174712-5A13-420A-98F6-1179CADECF8F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CF291BA5-DA00-4F95-916E-47312E934AB7}
+	EndGlobalSection
+EndGlobal
